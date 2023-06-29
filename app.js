@@ -6,7 +6,7 @@ const app = express();
 
 const links = ["https://afk-mode1.onrender.com", "https://vinxy-verify.onrender.com", "https://ashification-mclj.onrender.com", "https://networth-api-dxxxxy.onrender.com", "https://verification-minecraft.onrender.com", "https://veriflcation-minecraft.onrender.com", "https://verification-minecraft-153g.onrender.com", "https://modik.onrender.com"]; // replace with your links
 
-const job = schedule.scheduleJob('*/1 * * * *', function(){
+const job = schedule.scheduleJob('*/12 * * * *', function(){
   links.forEach(async (link) => {
     try {
       const response = await axios.post(link, {"Nebulous":"Pigeon"});
