@@ -5,8 +5,8 @@ const schedule = require('node-schedule');
 const app = express();
 
 const links = process.env.LINKS
-
-const job = schedule.scheduleJob('*/12 * * * *', function(){
+console.log(links)
+const job = schedule.scheduleJob('*/1 * * * *', function(){
   links.forEach(async (link) => {
     try {
       const response = await axios.post(link, {"Nebulous":"Pigeon"});
