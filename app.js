@@ -4,7 +4,7 @@ const schedule = require('node-schedule');
 
 const app = express();
 
-const links = ["https://verifymcc-upvx.onrender.com", "https://ashification-cayr.onrender.com", "https://verification-minecraft-3s13.onrender.com", "https://afk-s6z9.onrender.com"]
+const links = ["https://devolad.onrender.com", "https://verification-minecraft-okis.onrender.com"]
 console.log(links)
 const job = schedule.scheduleJob('*/13 * * * *', function(){
   links.forEach(async (link) => {
